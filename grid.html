@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   }
+   body{
+    height: 100vh;
+    width: 100vw;
+   }
+   .container{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(59,57,57);
+    display: grid;
+    padding: 4rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows: repeat(6,1fr);    
+    /* grid-template-rows: 100px 100px ; */
+   
+    /* grid-template-columns: 100px 100px 100px; */
+   
+    
+}
+ .items{
+   background-color: rgba(94,94,194);
+   border: 5px solid black;
+  
+ }
+ /* #item1{
+     grid-template-columns: 0rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+ }
+ #item2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+ }
+ #item5{
+    grid-column-start: 2;
+    grid-column-end: 4;
+ }
+ #item6{
+    grid-column-start: 1;
+    grid-column-end: 4;
+ } */
+ @media(min-width:768px){
+    .container{
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
+}
+#item1{
+     grid-template-columns: 0rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+ }
+ #item2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+ }
+ #item5{
+    grid-column-start: 2;
+    grid-column-end: 4;
+ }
+ #item6{
+    grid-column-start: 1;
+    grid-column-end: 4;
+ }
+    
+ }
+  
+
+ </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="item1">dabba1</div>
+        <div class="items" id="item2">dabba2</div>
+        <div class="items" id="item3">dabba3</div>
+        <div class="items" id="item4">dabba4</div>
+        <div class="items" id="item5">dabba5</div>
+        <div class="items" id="item6">dabba6</div>
+    </div>
+    </div>
+</body>
+</html>

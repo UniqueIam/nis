@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nist.edu</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+          /* background-color: #ee62a4; */
+          width: 100vw;
+          height: 1500vh;
+        }
+        .upar{
+          display: flex;
+          flex-direction: column;
+          position: sticky;
+          top: 0;
+        }
+      
+        .container1{
+            background-color:blue;
+            width: 100vw;
+            height: 6vh;
+            display: flex;
+        }
+        .left{
+            background-color:#df9d00;
+            width: 13%;
+            padding: 1.5vh 2vw;
+            font-size:0.7rem;
+        }
+        .container1>.left>i{
+      animation: animate 1.3s linear infinite;
+        }
+        @keyframes animate{
+         0%{
+          opacity: 0;
+         }
+         50%{
+          opacity: 1;
+         }
+         100%{
+          opacity: 0;
+         }
+        }
+        .left>span{
+            cursor: pointer;
+            font-size: 100%;
+        }
+         .middle{
+            background-color:blue;
+            width: 67%;
+            border: 0.5px solid rgb(240, 214, 214);
+           
+         } 
+         .list{
+            display: flex;
+            justify-content: end;
+            list-style: none;
+           
+         }
+         .middle>.list>.know:hover{
+             color: rgb(200, 200, 17);
+         }
+    .list>li{
+        font-size: 80%;
+        color: #ffffff;
+        cursor: pointer;
+       
+    }
+    .list>li>span{
+        font-size: 30px;
+        cursor: auto;
+    }
+    .right{
+        background-color: #df9d00;
+        width: 13%;
+        height: 100%;
+    }
+    .find{
+        background-color: beige;
+        width: 100%;
+        height: 100%;
+        margin-left: 1vw;
+    }
+    .inner{
+        /* background-color: yellowgreen; */
+        width: 70%;
+        height: 100%;
+       margin-left: 1.7vw;
+       display: flex;
+       list-style: none;
+    }
+    #search{
+        width: 7vw;
+        height: 4vh;
+       margin-top: 0.6vh;
+       margin-bottom: 1vh;
+       font-size: 16px;
+    }
+    #search-icon{
+        padding-top: 1.6vh;
+        color:#337ab7;
+        font-size:1.5vw;
+    }
+   
+ .container2{
+    background-color:black;
+    /* position: fixed; */
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+ }
+ .left2{
+    /* background-color: yellowgreen; */
+    width: 10%;
+    height: 100%;
+ }
+ .left2>img{
+    width: 64%;
+    height: 85%;
+    padding-left: 2vw;
+    padding-top: 1vh;
+    cursor: pointer;
+ }
+ .middle2{
+    /* background-color: violet; */
+    width: 50%;
+    height: 100%;
+ }
+.content{
+    padding: 1.5vh 2vw;
+}
+.row1{
+    font-size: 1.6vw;
+    font-weight: bold;
+    color: white;
+}
+   .row2{
+     font-size: 1.7vw;
+     color: white;
+   }
+   .right2{
+    /* background-color: white; */
+    width: 16%;
+    height: 100%;
+   }
+   .right-most2{
+     /* background-color: violet; */
+     width: 22%;
+     height: 100%;
+   }
+   .right-most2>img{
+    padding-top: 1vh;
+    width: 49%;
+    height: 85%;
+   }
+   .container3{
+    background-color:white;
+    width: 100vw;
+    height: 6vh;
+   }
+  .left3{
+    width: 75%;
+    height: 100%;
+    margin-left: 1.6vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 0.8vw;
+  }
+  .home{
+   width: 3%;height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* border-right: 0.8px solid black; */
+   border-top: transparent;
+  }
+  .home>.home-logo>i{
+   font-size:1.5vw;
+  }
+  .home:hover{
+    border-top: 4px solid #df9d00;
+  }
+  .admission{
+    background-color: yellow;
+    width: 14.8%;
+    height: 100%;
+    font-size: 1.3vw;
+    color: red;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 0.8px double black;
+    border-right: 0.8px double black;
+    border-top: 2px transparent;
+  }
+  .admission:hover{
+    border-top: 4px solid #df9d00 ;
+  }
+  #admission{
+    animation: animate 1.3s linear infinite;
+  }
+  @keyframes animate{
+   0%{
+    opacity: 0;
+   }
+   50%{
+    opacity: 1;
+   }
+   100%{
+    opacity: 0;
+   }
+  }
+ .nist{
+  height: 100%;
+  width: 8%;
+  padding-right: 1vw;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  border-right:0.4px double black;
+  border-left:0.4px double black;
+  border-top: transparent;
+ }
+ .nist:hover{
+  border-top: 4px solid #df9d00;
+ }
+ .campus{
+  height: 100%;
+  width: 6%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right:0.4px double black;
+  border-top: transparent;
+ }
+ .campus:hover{
+  border-top: 4px solid #df9d00;
+ }
+ .academic{
+  height: 100%;
+  width: 4%;
+  display: flex;
+  padding-right: 1vw;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  border-right:0.4px double black;
+  
+  border-top: transparent;
+ }
+ .academic:hover{
+  border-top: 4px solid #df9d00;
+ }
+ .research{
+  height: 100%;
+  width: 7%;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  border-right:0.4px double black;
+  /* border-left:0.4px double black; */
+  border-top: transparent;
+ }
+ .research:hover{
+  border-top: 4px solid #df9d00;
+ }
+ .incuvation{
+  height: 100%;
+  width: 7.3%;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  border-right:0.4px double black;
+  
+  border-top: transparent;
+ }
+ .incuvation:hover{
+  border-top: 4px solid #df9d00;
+ }
+ .collaboration{
+  height: 100%;
+  width: 11%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right:0.4px double black;
+  
+  border-top: transparent;
+ }
+ .collaboration:hover{
+  border-top: 4px solid #df9d00;
+ }
+ .carrer{
+  height: 100%;
+  width: 13.4%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right:0.4px double black;
+ 
+  border-top: transparent;
+ }
+ .carrer:hover{
+  border-top: 4px solid #df9d00;
+ }
+ .student{
+  height: 100%;
+  width: 6%;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+ 
+  border-top: transparent;
+ }
+ .student:hover{
+  border-top: 4px solid #df9d00;
+ }
+  .container4{
+    background-color:#2d4697;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    color: #ffffff;
+    font-size: 12px;
+  }
+ .container4>i{
+  cursor: pointer;
+ }
+ .container4>i:hover{
+  color: rgb(124, 124, 22);
+  timeline-scope: 6s;
+ }
+ 
+ .container5{
+  position:sticky;
+  background-color: black;
+  width: 100vw;
+  height: 55vh;
+  position: relative;
+ }
+ .container5>img{
+  width: 100%;
+  height: 100%;
+ }
+ .social{
+  display: flex;
+  flex-direction: column;
+  position:fixed;
+  /* position: absolute; */
+  top: 17rem;
+  left:0rem;
+ }
+  .facebook{
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color:#3b5a9b ;
+    color:#ffffff;
+  }
+  .linkedin{
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color: #0077b5;
+    color:#ffffff;
+  }
+  .twitter{
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color:#55aded ;
+    color:#ffffff;
+  }
+  .youTube{
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color:#fe0000 ;
+    color:#ffffff;
+  }
+  .instagram{
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color:#b13f8f ;
+    color:#ffffff;
+  }
+  .flickr{
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color:#ee62a4 ;
+    color:#ffffff;
+  }
+  .pinterest{
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color: #cd2129;
+    color:#ffffff;
+  }
+  .telegram{
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color:#0077b5 ;
+    color:#ffffff;
+  }
+  .whatsapp{
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color:#0dc143 ;
+    color:#ffffff;
+  }
+   .bottom-left{
+    position: absolute;
+    left: 6rem;
+    bottom: 1rem;
+    font-weight:500;
+    font-family: inherit;
+    font-size: 4rem;
+    color: #ffffff;
+   text-transform: uppercase;
+   }
+   .top-right{
+    display: flex;
+    position: fixed;
+       /* position: absolute; */
+       left: 78rem;
+       bottom: 18rem;
+   }
+   .top-right>button{
+    position: static;
+    font-size: 15px;
+    width: 9.5rem;
+    height: 2.2rem;
+    background-color:#fcd21c;
+    transform: rotate(-0.25turn);
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+
+
+    text-transform: uppercase;
+    font-weight: bold;
+   }
+   .top-right>button>i{
+    font-size: 24px;
+    background-color: red;
+    border-radius: 60%;
+   }
+   .container6{
+    background-color: #ffffff;
+    width: 100vw;
+    height: 40vh;
+   }
+   .heading6{
+    margin-top: 10vh;
+   }
+   .container6>.heading6{
+    text-align: center;
+    text-transform: uppercase;
+   }
+   .sub-heading6{
+       margin-top: 10vh;
+      padding: 0vh 4vw;
+      font-size: 20px;
+   }
+   .container7{
+    height: 80vh;
+    width: 100vw;
+    background-color:#ede2e2;
+    display: flex;
+   }
+   .lhc{
+    height: 37vh;
+    width: 40vw;
+    /* background-color: thistle; */
+    margin-top: 14vh;
+    margin-left: 6vw;
+   }
+   .lhc-img{
+    height: 80vh;
+    width: 60vw;
+    /* background-color: tan; */
+    
+   }
+   .lhc-img>img{
+    padding: 6vh 3vw;
+   }
+   .fresher{
+    list-style: none;
+   }
+   .fresher>.top{
+      text-align:left;
+      text-transform: uppercase;
+      padding-top: 3vh;
+      padding-left: 3vw;
+      font-size: 23px;
+      font-weight: bold;
+   }
+   .fresher>.middle7{
+    text-align: left;
+    padding-left: 3vw;
+    padding-top:5vh;
+    font-size: 18px;
+    line-height: 5vh;
+   }
+   .container8{
+    width: 100vw;
+    height: 80vh;
+    background-color: #ffffff;
+    display: flex;
+   }
+   .gall-img{
+    padding-top: 4vh;
+    
+    padding-left: 4vw;
+   }
+   .gallery8{
+     width: 45vw;
+     height: 80vh;
+     /* background-color: slategray; */
+   }
+   .gall{
+    list-style: none;
+   }
+   .top8{
+    padding-left: 3vw;
+    padding-top: 4vh;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+   }
+   .middle8{
+    color:#333333;
+    padding-left: 3.1vw;
+    padding-top: 5vh;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height:25px;
+    font-family: opensans;
+   }
+   .container9{
+    height: 80vh;
+    width: 100vw;
+    background-color:#ede2e2;
+    display: flex;
+   }
+   .octagon{
+    height: 37vh;
+    width: 40vw;
+    margin-top: 14vh;
+    margin-left: 6vw;
+   }
+   .octagon-img{
+    height: 80vh;
+    width: 60vw;
+    
+   }
+   .octagon-img>img{
+    padding: 6vh 3vw;
+   }
+   .fresher9{
+    list-style: none;
+   }
+   .fresher9>.top9{
+      text-align:left;
+      text-transform: uppercase;
+      padding-top: 3vh;
+      padding-left: 3vw;
+      font-size: 23px;
+      font-weight: bold;
+   }
+   .fresher9>.middle9{
+    text-align: left;
+    padding-left: 3vw;
+    padding-top:5vh;
+    font-size: 18px;
+    line-height: 5vh;
+   }
+   .container10{
+    width: 100vw;
+    height: 80vh;
+    background-color: #ffffff;
+    display: flex;
+   }
+   .atrium-img{
+    padding-top: 4vh;
+    
+    padding-left: 4vw;
+   }
+   .atrium10{
+     width: 45vw;
+     height: 80vh;
+     /* background-color: slategray; */
+   }
+   .atr10{
+    list-style: none;
+   }
+   .top10{
+    padding-left: 3vw;
+    padding-top: 4vh;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+   }
+   .middle10{
+    color:#333333;
+    padding-left: 3.1vw;
+    padding-top: 5vh;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height:25px;
+    font-family: opensans;
+   }
+
+   .container11{
+    height: 80vh;
+    width: 100vw;
+    background-color:#ede2e2;
+    display: flex;
+   }
+   .tifac{
+    height: 37vh;
+    width: 40vw;
+    margin-top: 14vh;
+    margin-left: 6vw;
+   }
+   .tifac-img{
+    height: 80vh;
+    width: 60vw;
+    
+   }
+   .tifac-img>img{
+    padding: 6vh 3vw;
+   }
+   .fresher11{
+    list-style: none;
+   }
+   .fresher11>.top11{
+      text-align:left;
+      text-transform: uppercase;
+      padding-top: 3vh;
+      padding-left: 3vw;
+      font-size: 23px;
+      font-weight: bold;
+   }
+   .fresher11>.middle11{
+    text-align: left;
+    padding-left: 3vw;
+    padding-top:5vh;
+    font-size: 18px;
+    line-height: 5vh;
+   }
+   .container12{
+    width: 100vw;
+    height: 80vh;
+    background-color: #ffffff;
+    display: flex;
+   }
+   .core-img{
+    padding-top: 4vh;
+    
+    padding-left: 4vw;
+   }
+   .core12{
+     width: 45vw;
+     height: 80vh;
+     /* background-color: slategray; */
+   }
+   .core12{
+    list-style: none;
+   }
+   .top12{
+    padding-left: 3vw;
+    padding-top: 4vh;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.6rem;
+   }
+   .middle12{
+    color:#333333;
+    padding-left: 3.1vw;
+    padding-top: 5vh;
+    font-size: 1rem;
+    line-height:6vh;
+    font-family: opensans;
+   }
+   .container13{
+    width: 100vw;
+    height: 30vh;
+    /* background-color:yellow;  */
+  }
+  .lab13{
+    width: 90vw;
+    height: 20vh;
+    /* background-color: black; */
+    margin-left: 5vw;
+  }
+  .laboratory{
+    text-transform: uppercase;
+    text-align: center;
+    font-size:28px;
+  }
+  .lab-content{
+     padding-top: 7vh;
+     line-height:4vh;
+     font-size: 20px;
+     
+  }
+  .container14{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ede2e2;
+    display: flex;
+  
+  }
+  .text14{
+    width: 55vw;
+    height: 100vh;
+    /* background-color: wheat; */
+  }
+  .img14{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding: 3em;
+    row-gap: 0.6rem;
+    column-gap: 1.4rem;
+    width: 45vw;
+    height: 80vh;
+    /* background-color: turquoise; */
+    margin-top: 4vh;
+  }
+ 
+
+  #item1{
+    background-image: url("./lab_cse.jpg");
+    background-size: cover;
+  }
+  #item2{
+    background-image: url("./lab_cse1.jpg");
+    background-size: cover;
+  }
+  #item3{
+    background-image: url("./lab_cse2.jpg");
+    background-size: cover;
+  }
+  #item4{
+    background-image: url("./lab_cse3.jpg");
+    background-size: cover;
+  }
+  .top14{
+    width: 48vw;
+    height: 10vh;
+    /* background-color: black; */
+    margin-top: 18vh;
+    margin-left: 3vw;
+    /* position:relative; */
+    color: black;
+    font-weight: 500;
+    text-align:left;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+   
+  }
+  .basic14{
+    width: 30vw;
+    height: 6vh;
+    /* background-color: red; */
+    margin-top: 2vh;
+    margin-left:3vw;
+    display: flex;
+    align-items: end;
+    justify-content:space-between; 
+    position: relative;
+  }
+ .left14{
+  width: 25vw;
+  height: 28vh;
+  /* background-color:yellow; */
+  position:relative;
+  left: 5vw;
+  top: 1vh;
+ 
+ }
+ .right14{
+  width: 29vw;
+  height: 28vh;
+  /* background-color: olivedrab; */
+  position: relative;
+  left: 30vw;
+  top: -26vh;
+ }
+ #item1>img{
+  width: 100%;
+  height: 100%;
+ }
+
+ .container15{
+  width: 100vw;
+  height: 100vh;
+  /* background-color: slategrey; */
+  display: flex;
+ }
+ .left15{
+  width: 50%;
+  height: 80%;
+  /* background-color: #0dc143; */
+  display: grid;
+  margin: 5rem;
+  grid-template-columns: repeat(2,1fr);
+    row-gap: 0.6rem;
+    column-gap: 1.4rem;
+ }
+ .right15{
+  width: 50%;
+  height: 80%;
+  /* background-color: #2d4697; */
+  margin-top: 5rem;
+  margin-right: 5rem;
+  row-gap: 1rem;
+  
+ 
+ }
+ #ece1{
+  /* background-color: #b13f8f; */
+  height: 5rem;
+  width: 95%;
+  font-size: 1.5rem;
+  margin-left: 0rem;
+ padding-top: 2rem;
+ 
+ }
+ #ece2{
+  /* background-color: red; */
+  height: 3rem;
+  width: 80%;
+ margin-top: 1rem;
+ font-size:1.2rem;
+ }
+ #ece3{
+  /* background-color: springgreen; */
+  height: 20rem;
+  width: 60%;
+  margin-top: 1rem;
+  margin-left: 2rem;
+ }
+ .items15{
+  background-color: beige;
+  /* border: 2px solid black; */
+ }
+ #box1{
+  background-image: url("./lab_ece.jpg");
+  background-size: cover;
+ }
+ #box2{
+  background-image: url("./lab_ece1.jpg");
+  background-size: cover;
+ }
+#box3{
+  background-image: url("./lab_ece2.jpg");
+  background-size: cover;
+}
+#box4{
+  background-image: url("./lab_ece3.jpg");
+  background-size: cover;
+}
+
+.container16{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ede2e2;
+    display: flex;
+  
+  }
+  .text16{
+    width: 55vw;
+    height: 100vh;
+    /* background-color: wheat; */
+  }
+  .img16{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding: 3em;
+    row-gap: 0.6rem;
+    column-gap: 1.4rem;
+    width: 45vw;
+    height: 80vh;
+    /* background-color: turquoise; */
+    margin-top: 4vh;
+  }
+ 
+  #eee1{
+    background-image: url("./lab_ee.jpg");
+    background-size: cover;
+  }
+  #eee2{
+    background-image: url("./lab_ee1.jpg");
+    background-size: cover;
+  }
+  #eee3{
+    background-image: url("./lab_ee2.jpg");
+    background-size: cover;
+  }
+  #eee4{
+    background-image: url("./lab_ee3.jpg");
+    background-size: cover;
+  }
+  .top16{
+    width: 48vw;
+    height: 10vh;
+    /* background-color: black; */
+    margin-top: 18vh;
+    margin-left: 3vw;
+    /* position:relative; */
+    color: black;
+    font-weight: 500;
+    text-align:left;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+   
+  }
+  .basic16{
+    width: 30vw;
+    height: 6vh;
+    /* background-color: red; */
+    margin-top: 2vh;
+    margin-left:3vw;
+    display: flex;
+    align-items: end;
+    justify-content:space-between; 
+    position: relative;
+  }
+ .left16{
+  width: 25vw;
+  height: 28vh;
+  /* background-color:yellow; */
+  position:relative;
+  left: 3.6vw;
+  top: 1vh;
+ 
+ }
+ .right16{
+  width: 29vw;
+  height: 28vh;
+  /* background-color: olivedrab; */
+  position: relative;
+  left: 30vw;
+  top: -26vh;
+ }
+ #eee1>img{
+  width: 100%;
+  height: 100%;
+ }
+    
+ .container17{
+  width: 100vw;
+  height: 100vh;
+  /* background-color: slategrey; */
+  display: flex;
+ }
+ .left17{
+  width: 50%;
+  height: 80%;
+  /* background-color: #0dc143; */
+  display: grid;
+  margin: 5rem;
+  grid-template-columns: repeat(2,1fr);
+    row-gap: 0.6rem;
+    column-gap: 1.4rem;
+ }
+ .right17{
+  width: 50%;
+  height: 80%;
+  /* background-color: #2d4697; */
+  margin-top: 5rem;
+  margin-right: 5rem;
+  row-gap: 1rem;
+  
+ 
+ }
+ #mec1{
+  /* background-color: #b13f8f; */
+  height: 5rem;
+  width: 95%;
+  font-size: 1.5rem;
+  margin-left: 0rem;
+ padding-top: 2rem;
+ 
+ }
+ #mec2{
+  /* background-color: red; */
+  height: 3rem;
+  width: 80%;
+ margin-top: 1rem;
+ font-size:1.2rem;
+ }
+ #mec3{
+  /* background-color: springgreen; */
+  height: 20rem;
+  width: 60%;
+  margin-top: 1rem;
+  margin-left: 2rem;
+ }
+ .items17{
+  background-color: beige;
+  /* border: 2px solid black; */
+ }
+ #box-mec1{
+  background-image: url("./lab_me.jpg");
+  background-size: cover;
+ }
+ #box-mec2{
+  background-image: url("./lab_me1.jpg");
+  background-size: cover;
+ }
+#box-mec3{
+  background-image: url("./lab_me2.jpg");
+  background-size: cover;
+}
+#box-mec4{
+  background-image: url("./lab_me3.jpg");
+  background-size: cover;
+}
+
+.container18{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ede2e2;
+    display: flex;
+  
+  }
+  .text18{
+    width: 55vw;
+    height: 100vh;
+    /* background-color: wheat; */
+  }
+  .img18{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding: 3em;
+    row-gap: 0.6rem;
+    column-gap: 1.4rem;
+    width: 45vw;
+    height: 80vh;
+    /* background-color: turquoise; */
+    margin-top: 4vh;
+  }
+ 
+  #ce1{
+    background-image: url("./lab_ee.jpg");
+    background-size: cover;
+  }
+  #ce2{
+    background-image: url("./lab_ee1.jpg");
+    background-size: cover;
+  }
+  #ce3{
+    background-image: url("./lab_ee2.jpg");
+    background-size: cover;
+  }
+  #ce4{
+    background-image: url("./lab_ee3.jpg");
+    background-size: cover;
+  }
+  .top18{
+    width: 48vw;
+    height: 10vh;
+    /* background-color: black; */
+    margin-top: 24vh;
+    margin-left: 3vw;
+    /* position:relative; */
+    color: black;
+    font-weight: 500;
+    text-align:left;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+   
+  }
+  .basic18{
+    width: 30vw;
+    height: 6vh;
+    /* background-color: red; */
+    margin-top: 2vh;
+    margin-left:3vw;
+    display: flex;
+    align-items: end;
+    justify-content:space-between; 
+    position: relative;
+  }
+ .left18{
+  width: 25vw;
+  height: 28vh;
+  /* background-color:yellow; */
+  position:relative;
+  left: 3.6vw;
+  top: 1vh;
+ 
+ }
+ .right18{
+  width: 29vw;
+  height: 28vh;
+  /* background-color: olivedrab; */
+  position: relative;
+  left: 30vw;
+  top: -26vh;
+ }
+ #ce1>img{
+  width: 100%;
+  height: 100%;
+ }
+
+ .container19{
+  width: 100%;
+  height:180vh;
+  /* background-color: #ff6347; */
+  display: grid;
+  padding-left: 8rem;
+  padding-top: 6rem;
+  padding-right: 4rem;
+  row-gap: 4rem;
+ 
+   
+ }
+ .cam-hostel{
+    width: 90%;
+    height: 8vh;
+    margin-top: -1rem;
+    /* background-color: #0077b5; */
+    text-align: center;
+    /* padding-top: 1rem; */
+    font-size:3rem;
+    color:black;
+    padding-left: 6rem;
+    
+  
+ }
+ .hr-img{
+  width: 100%;
+  height: 40vh;
+ margin-left: -1em;
+  /* padding-right: 3rem; */
+  /* background-color: bisque; */
+  display: grid;
+   grid-template-rows: repeat(1,1fr);
+   grid-template-columns: repeat(3,1fr);
+   gap: 0.5rem;
+ }
+
+ .hostel-buildings{
+  /* background-color: #4ed068; */
+  border: 2px solid white;
+ }
+ #boys-hr1{
+  background-image: url("./HR-1.jpg");
+  background-size: cover;
+ }
+ #boys-hr2{
+  background-image: url("./HR-2.jpg");
+  background-size: cover;
+ }
+ #girls-hr1{
+  background-image: url("./Ladies-Hostel.jpg");
+  background-size: cover;
+ }
+ .cam-text{
+  width: 100%;
+  margin-left: -2rem;
+  height: 24vh;
+  /* background-color: pink; */
+  font-size: 1.3rem;
+  word-spacing: 0.3rem;
+ }
+ .hr-life{
+  width: 95%;
+  height: 80vh;
+  /* background-color: rgb(187, 240, 213); */
+  margin-left: 2rem;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    column-gap: 0.3rem;
+    row-gap: 1rem;
+ }
+.life19{
+  /* background-color: #17c45909; */
+  border: 2px solid white;
+}
+#img19-1{
+  background-image: url("./download.jpg");
+  background-size: cover;
+}
+#img19-2{
+  background-image: url("./download\ \(1\).jpg");
+  background-size: cover;
+}
+#img19-3{
+  background-image: url("./download\ \(2\).jpg");
+  background-size: cover;
+}
+#img19-4{
+  background-image: url("./images.jpg");
+  background-size: cover;
+}
+#img19-5{
+  background-image: url("./download\ \(3\).jpg");
+  background-size: cover;
+}
+#img19-6{
+  background-image: url("./download\ \(4\).jpg");
+  background-size: cover;
+}
+
+</style>
+</head>
+<body>
+  <div class="main">
+    <div class="upar">
+              <div class="container1">
+     <div class="left">
+        <span>
+        <i class="ri-notification-2-fill"></i>
+       ANNOUNCEMENTS</span>
+     </div>
+
+     <div class="middle">
+        <ul class="list">
+            <li class="know">CHAIRMAN MESSAGE<span class="line">|</span></li>
+            <li class="know">FACULTY<span class="line">|</span></li>
+            <li class="know">STUDENTS<span class="line">|</span></li>
+            <li class="know">ALUMINI<span class="line">|</span></li>
+            <li class="know">GALLERY<span class="line">|</span></li>
+            <li class="know">DOWNLOADS<span class="line">|</span></li>
+            <li class="know">CONTACTS<span class="line">|</span></li>
+        </ul>
+     </div>
+       <div class="right">
+           <ul class="find">
+            <div class="inner">
+            <li> <input type="text" id="search" placeholder="Search"></li>
+            <li id="search-icon"> <i class="ri-search-line"></i></li>
+        </div>
+           </ul>
+    </div>
+    </div>
+
+    <div class="container2">
+      <div class="left2">
+         <img src="./nist_logo.png">
+      </div>
+      <div class="middle2">
+        <table class="content">
+          <tr class="row1">
+            <td>NIST Institute of Science and Technology (Autonomous)</td>
+          </tr>
+          <tr class="row2">
+            <td>Institute Park, Pallur Hills, Berhampur, Odisha</td>
+          </tr>
+        </table>
+      </div>
+      <div class="right2"></div>
+      <div class="right-most2">
+        <img src="./naac1.png">
+        <img src="./nba1.png">
+      </div>
+    </div>
+    <div class="container3">
+      <div class="left3">
+        <div class="home">
+            <div class="home-logo"><i class="ri-home-4-fill"></i></div>
+            </div>
+            <div class="nist">THIS IS NIST</div>
+            <div class="campus">CAMPUS</div>
+            <div class="academic">ACADEMIC</div>
+            <div class="research">RESEARCH</div>
+            <div class="incuvation">INCUVATION</div>
+            <div class="collaboration">COLLABORATION</div>
+            <div class="carrer">CARRER DEVELOPMENT</div>
+            <div class="student">STUDENT</div>
+            <div class="admission"><p id="admission">Admission 2023</p></div>
+      </div>
+     </div>
+             
+     <div class="container4">
+      <i class="ri-building-4-line">ACADEMIC BUILDINGS</i>
+      <i class="ri-flask-fill">LABORATORIES</i>
+      <i class="ri-hotel-line">CAMPUS HOSTEL</i>
+      <i class="ri-football-line">SPORTS FACILITIES</i>
+      <i class="ri-code-box-line">OTHER FACILITIES</i>
+   </div>
+
+
+    </div>
+   
+           
+     <div class="container5">
+        <img src="./nist-campus.jpg">
+        <div class="social">
+          
+           <button class="facebook"><i class="ri-facebook-fill"></i></button>
+          <button class="linkedin"><i class="ri-linkedin-fill"></i></button>
+          <button class="twitter"><i class="ri-twitter-fill"></i></button>
+          <button class="youTube"><i class="ri-youtube-fill"></i></button>
+          <button class="instagram"><i class="ri-instagram-fill"></i></button>
+          <button class="flickr"><i class="ri-flickr-fill"></i></button>
+          <button class="pinterest"><i class="ri-pinterest-fill"></i></button>
+          <button class="telegram"><i class="ri-telegram-fill"></i></button>
+          <button class="whatsapp"><i class="ri-whatsapp-fill"></i></button>
+        </div>
+        <div class="bottom-left">campus</div>
+        <div class="top-right">
+          <button>Enquire Now
+         <!-- <div class="enquire">Enquire Now</div> -->
+         <!-- <div class="call"><i class="ri-phone-line"></i></div> -->
+         <i class="ri-phone-line"></i>
+        </button>
+        </div>
+      
+     </div>
+
+     <div class="container6">
+      <div class="heading6"><h1>academic buildings</h1></div>
+      <div class="sub-heading6">Inside perhaps one of the greenest campuses in India, NIST academic buildings house most of the classrooms, science labs, and various faculty offices and all of them are well connected through fiber optics for uninterrupted network service. The academic buildings on the green campus are where faculty and students come together to exchange ideas, explore concepts and brainstorm. Each one of the buildings has individual faculty rooms related to particular departments and high end labs.
+
+      </div>
+     </div>
+       
+     <div class="container7">
+     <div class="lhc">
+      <ul class="fresher">
+        <li class="top">Lecture hall complex</li>
+        <li class="middle7">LECTURE Hall Complex (LHC) is a five-floored building of over 60,000 sq.ft. Furnished with all modern amenities, it houses a lot of our classrooms and our electronics, machines and computer science laboratories. It also houses the server room and the administrative section.</li>
+      </ul>
+     </div>
+     <div class="lhc-img"><img src="./lhc.jpg"></div>
+     </div>
+
+      <div class="container8">
+        <div class="gall-img"><img src="./galleria.jpg"></div>
+        <div class="gallery8">
+          <ul class="gall">
+            <li class="top8">GALLERIA</li>
+            <li class="middle8">GALLERIA is a four-storied architectural marvel of over 100,000 sq.ft. It is one of our new additions. Galleria is one of its kind with 12 lecture halls and a 250-seat auditorium. The prestigious High-performance computing lab and the IBM Centre for Excellence are housed in this building. The NIST Technology Consultancy Services (NTCS) - the one-stop-shop for all our technology related issues - occupies a pride of place in the building.</li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="container9">
+          <div class="octagon">
+            <ul class="fresher9">
+              <li class="top9">octagon</li>
+              <li class="middle9">OCTAGON is a multi-storeyed, multipurpose masterpiece. The structure echoes our strife to meet corporate standards in every little thing we do. Octagon houses a modern Computer Center, an Internet Room, a computerized Library, 2 faculty rooms, 5 classrooms, and a Cafeteria that can seat over 150 people at a time.</li>
+            </ul>
+           </div>
+           <div class="octagon-img"><img src="./octagan.jpg"></div>
+        </div>
+
+        <div class="container10">
+          <div class="atrium-img"><img src="./atrium.jpg"></div>
+          <div class="atrium10">
+            <ul class="atr10">
+              <li class="top10">ATRIUM</li>
+              <li class="middle10">ATRIUM is the latest addition to our building infrastructure. This building houses the maximum number of classrooms in the campus amounting to 25, 11 laboratories including the Chemistry, Physics, Engineering drawing, C-lab, Language lab, etc., and 13 faculty rooms. The Student Activities Center is also located here. The NIST Business School with its own well-equipped library is also nestled in this sprawling building is a reflection of our tastes and ideas in embracing ultramodern architecture and latest technologies in our own classrooms and laboratories to impart quality education.</li>
+          </div>
+        </div>
+
+        <div class="container11">
+          <div class="tifac">
+            <ul class="fresher11">
+              <li class="top11">tifac</li>
+              <li class="middle11">TIFAC is a multi-storeyed, multipurpose masterpiece. The structure echoes our strife to meet corporate standards in every little thing we do. Octagon houses a modern Computer Center, an Internet Room, a computerized Library, 2 faculty rooms, 5 classrooms, and a Cafeteria that can seat over 150 people at a time.
+              </li>
+            </ul>
+           </div>
+           <div class="tifac-img"><img src="./tifac.jpg"></div>
+        </div>
+
+        <div class="container12">
+          <div class="core-img"><img src="./core.jpg"></div>
+          <div class="core12">
+            <ul class="core12">
+              <li class="top12">CENTER FOR RESEARCH AND EXCELLENCE</li>
+              <li class="middle12">CORE: The core building is the center of research and excellence.This new five-story building has state of the art Research labs and the best equipment. Each room has data and power ports and most of the labs are outfitted with individual workstations.
+              </li>
+          </div>
+        </div>
+         
+         <div class="container13">
+          <div class="lab13">
+            <div class="laboratory">laboratories</div>
+            <div class="lab-content">The laboratories of each and every department provide state-of-the-art facilities and are amongst the most up-to-date and best equipped. The laboratories house a wide range of facilities available for research, teaching and consultancy. It provides students the opportunity to gain hands-on experience with the knowledge they are learning in the classroom. Student involvement in research and the mentoring of individual students by members of the faculty are as important to our program as classroom teaching.</div>
+         </div>
+         </div>
+  
+         <div class="container14">
+          <div class="text14">
+            <div class="top14">school of Computer Science and Engineering</div>
+            <div class="basic14">
+              <div class="bl">
+                Basic Labs
+              </div>
+              <div class="rl">
+                Research Labs
+              </div>
+            </div>
+              <div class="left14">
+                <ul>
+                <li>Microprocessor and Micro controller</li>
+                <li>Computer Organization and Architecture</li>
+                <li>Computer Network</li>
+                <li>Operating System</li>
+                <li>Database Engineering Lab</li>
+                <li>Software Engineering Lab</li>
+                <li>Data Structure and Algorithm Lab</li>
+                <li>Problem Solving and Programming Lab</li>
+                <li>Embedded System Lab</li>
+              </ul>
+              </div>
+              <div class="right14">
+                <ul>
+                  <li>High Performance Computing ( HiPC) Lab
+                  </li>
+                  <li>Cryptography and Network Security Lab
+                  </li>
+                  <li>Computer Vision and Image Processing Lab
+                  </li>
+                  <li>Embedded System and IoT Lab.
+                  </li>
+                  <li>Data Science and Machine Learning Lab
+                  </li>
+                  <li>Multimedia and Game Design Lab
+                  </li>
+                  <li>CISCO Networking Lab
+                  </li>
+                  <li>IBM Tools Lab
+                  </li>
+                </ul>
+              </div>
+            </div>
+          <div class="img14">
+              <div class="items14" id="item1"></div>
+              <div class="items14" id="item2"></div>
+              <div class="items14" id="item3"></div>
+              <div class="items14" id="item4"></div>
+          </div>
+
+         </div> 
+         <!-- container14 close -->
+          <div class="container15">
+            <div class="left15">
+              <div class="items15" id="box1"></div>
+              <div class="items15" id="box2"></div>
+              <div class="items15" id="box3"></div>
+              <div class="items15" id="box4"></div>
+            </div>
+            <div class="right15">
+              <div class="ece15" id="ece1">School of Electronics and Communication Engineering</div>
+              <div class="ece15" id="ece2">Research Labs</div>
+              <div class="ece15" id="ece3">
+                <ul>
+                  <li>Device Fabrication and Characterization Lab
+                  </li>
+                  <li>Microwave Measurement and Characterization Lab
+                  </li>
+                  <li>Antenna Fabrication Lab
+                  </li>
+                  <li>Synthesis Lab
+                  </li>
+                  <li>3G/4G Communication Lab
+                  </li>
+                  <li>VLSI Lab
+                  </li>
+                  <li>WSN Lab</li>
+                  <li>CADENCE LAB
+                  </li>
+                  <li>Microwave Tool Room
+                  </li>
+                  <li>Embedded Lab
+                  </li>
+                  <li>FPGA Lab
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="container16">
+            <div class="text16">
+              <div class="top16">School of Electrical & Electronics Engineering</div>
+              <div class="basic16">
+                <div class="bl">
+                  Basic Labs
+                </div>
+                <div class="rl">
+                  Research Labs
+                </div>
+              </div>
+                <div class="left16">
+                  <ul>
+                  <li>Basic Electrical Laboratory
+                  </li>
+                  <li>Electrical Machines Laboratory
+                  </li>
+                  <li>Control Systems Laboratory
+                  </li>
+                  <li>UG Power Electronics Laboratory
+                  </li>
+                  <li>Electrical Transmission and Distribution Laboratory
+                  </li>
+                  <li>
+                    Electric Drives Laboratory</li>
+                  <li>Network and Measurement Laboratory
+                  </li>
+                </ul>
+                </div>
+                <div class="right16">
+                  <ul>
+                    <li>Electrical Simulation Laboratory
+                    </li>
+                    <li>Renewable Energy System Laboratory
+                    </li>
+                    <li>Smart Grid Laboratory
+                    </li>
+                    <li>Mechatronics Laboratory
+                    </li>
+                    <li>Process Automation Laboratory
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            <div class="img16">
+                <div class="items16" id="eee1"></div>
+                <div class="items16" id="eee2"></div>
+                <div class="items16" id="eee3"></div>
+                <div class="items16" id="eee4"></div>
+            </div>
+  
+           </div> 
+
+           <div class="container17">
+            <div class="left17">
+              <div class="items17" id="box-mec1"></div>
+              <div class="items17" id="box-mec2"></div>
+              <div class="items17" id="box-mec3"></div>
+              <div class="items17" id="box-mec4"></div>
+            </div>
+            <div class="right17">
+              <div class="mec17" id="mec1">School of Mechanical Engineering</div>
+              <div class="mec17" id="mec2">Research Labs</div>
+              <div class="mec17" id="mec3">
+                <ul>
+                  <li>Mechanical Measurement Lab
+                  </li>
+                  <li>Heat Transfer Lab
+                  </li>
+                  <li>Refrigeration & Air Conditioning Lab
+                  </li>
+                  <li>Engineering Thermodynamics Lab
+                  </li>
+                  <li>Fluid Mechanics and Hydraulic Machines Lab
+                  </li>
+                  <li>Mechanism and Machines Lab
+                  </li>
+                  <li>Basic Manufacturing Process Lab</li>
+                  <li>Kinematics and Dynamics of Machines
+                  </li>
+                  <li>Strength of Materials Lab
+                  </li>
+                  <li>IC Engines Lab
+                  </li>
+                  <li>Research Lab
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="container18">
+            <div class="text18">
+              <div class="top18">School of Civil Engineering</div>
+              <div class="basic18">
+                <div class="bl">
+                  Basic Labs
+                </div>
+                <!-- <div class="rl">
+                  Research Labs
+                </div> -->
+              </div>
+                <div class="left18">
+                  <ul>
+                  <li>Structural Engineering Laboratory
+
+                  </li>
+                  <li>Transportation Engineering Laboratory
+
+                  </li>
+                  <li>Geotechnical Laboratory
+                  </li>
+                  <li>EnvironmentaL Engineering Laboratory
+                  </li>
+                  <li>Surveying laboratory
+                  </li>
+                  <li>
+                   Basics of Civil Engineering Laboratory</li>
+                  
+                </ul>
+                </div>
+               
+              </div>
+            <div class="img18">
+                <div class="items18" id="ce1"></div>
+                <div class="items18" id="ce2"></div>
+                <div class="items18" id="ce3"></div>
+                <div class="items18" id="ce4"></div>
+            </div>
+  
+           </div> 
+         
+           <div class="container19">
+             <div class="cam-hostel">CAMPUS HOSTELS</div>
+             <div class="hr-img">
+              <div class="hostel-buildings" id="boys-hr1">HR1</div>
+              <div class="hostel-buildings" id="boys-hr2">HR2</div>
+              <div class="hostel-buildings" id="girls-hr1">HR3</div>
+             </div>
+             <div class="cam-text">The campus consists of several well built hostel blocks, both for girls and boys, with capacity of 2000 students. Each hostel consists of a separate mess, administrative office, hostel superintendent and caretaker. In addition to well furnished rooms, the hostel is complete with facilities like free high speed Wi-Fi connection, gymnasium, medical center and other amenities for shopping, sports, recreation and entertainment. The hostel mess serves fresh and hygienic food. Each hostel also organizes its own extra-curricular activities.</div>
+             <div class="hr-life">
+              <div class="life19" id="img19-1"></div>
+              <div class="life19" id="img19-2"></div>
+              <div class="life19" id="img19-3"></div>
+              <div class="life19" id="img19-4"></div>
+              <div class="life19" id="img19-5"></div>
+              <div class="life19" id="img19-6"></div>
+             </div>
+
+           </div>
+
+
+
+    </div>
+    <script src="ab.js"></script>
+</body>
+</html>
