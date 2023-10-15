@@ -88,7 +88,7 @@
             box-sizing: border-box;
         }
         .main{
-          /* background-color: #ee62a4; */
+          background-color: #ee62a4;
           width: 100vw;
           height: 1500vh;
         }
@@ -531,14 +531,17 @@
    }
    .top-right{
     display: flex;
-    position: fixed;
+    position:fixed;
+    left: 100vw;
+
        /* position: absolute; */
        left: 78rem;
        bottom: 18rem;
        
    }
    .top-right>button{
-    position: static;
+    position:fixed;
+    left: 100vw;
     font-size: 15px;
     width: 9.5rem;
     height: 2.2rem;
@@ -1201,7 +1204,7 @@
     justify-content:space-between; 
     position: relative;
   }
- .left18{
+  .left18{
   width: 25vw;
   height: 28vh;
   /* background-color:yellow; */
@@ -1385,6 +1388,47 @@
   top: 10px;
 }
 
+.container20{
+  width: 100vw;
+  height: 50vh;
+  margin-top: 25vh;
+  
+}
+
+.header-20{
+  /* background-color: #0dc143; */
+  width: 50vw;
+  height: 10vh;
+  justify-content: center;
+  margin-left: 25%;
+  padding: 1vh 13vw;
+  font-size: 30px;
+}
+.content-20{
+  /* background-color: yellowgreen; */
+  width: 80vw;
+  height: 35vh;
+  margin-top: 5vh;
+ margin-left: 10vw;
+ font-size: 22px;
+ word-spacing: 1px;
+ 
+}
+.container21{
+  background-color: violet;
+  width: 100vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(3,1fx);
+  grid-template-rows: repeat(3.1fx);
+}
+.img-21{
+  width: 82vw;
+  background-color: tomato;
+  margin-left: 8vw;
+  margin-right: 8vw;
+ border: 2px black;
+}
 </style>
 </head>
 <body>
@@ -1486,7 +1530,7 @@
         </div>
         <div class="bottom-left">campus</div>
         <div class="top-right">
-          <button>Enquire Now
+          <button class="enquiry">Enquire Now
          <!-- <div class="enquire">Enquire Now</div> -->
          <!-- <div class="call"><i class="ri-phone-line"></i></div> -->
          <i class="ri-phone-line"></i>
@@ -1836,11 +1880,29 @@
 
            </div>
 
+           <div class="container20">
+                   <div class="header-20">SPORTS FACILITIES</div>
+                   <div class="content-20">NISTians do freak out! Sports and entertainment are a major part of the curriculum at NIST. We lay special focus on the students' overall progress and growth with a strong emphasis on sports and extra-curricular activities. The college organizes various inter-college competitions. Cultural events are held during college festivals. The NIST-ISTE chapter holds a three-day All-India event called "SANKALP" each year comprising more than 25 technical and cultural programs. A special event called WAVE, held every year, highlights the cultural talent of our incoming batch. "Waves" is a smash-hit with students. It is replete with dances, debates, skits, mono-acting, just-a-minute sessions, painting, cartooning, tattoo-making, dumb charades, antakshari, rapid-fire quiz and multi-cultural fashion parade. Students also put up their own food and games stalls. "Waves", therefore, is total fun.</div>
            </div>
- 
 
-         
+            <div class="container21">
+              <div class="img-21">
+               <div class="sports21">1</div>
+               <div class="sports21">2</div>
+               <div class="sports21">3</div>
+               <div class="sports21">4</div>
+               <div class="sports21">5</div>
+               <div class="sports21">6</div>
+               <div class="sports21">7</div>
+               <div class="sports21">8</div>
+               <div class="sports21">9</div>
+              </div>
+            </div>
 
+
+
+
+           </div>
     </div>
     <script src="ab.js"></script>
 </body>
